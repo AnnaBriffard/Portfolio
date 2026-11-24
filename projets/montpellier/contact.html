@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Plus d'infos - Découverte de Montpellier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <ul>
+            <li><a href="../../index.html#project" class="nav-portfolio" target="_top">← Portfolio</a></li>
+            <li><a href="index.html#accueil">Accueil</a></li>
+            <li><a href="index.html#presentation">Présentation</a></li>
+            <li><a href="index.html#carte">Carte</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête -->
+    <header id="accueil">
+        <h1>Plus d'informations</h1>
+    </header>
+
+    <!-- Section d'informations et contact -->
+    <section id="presentation" class="presentation">
+        <h2>Office de Tourisme de Montpellier</h2>
+        <p>
+            Pour préparer au mieux votre séjour ou en savoir plus sur les événements culturels et patrimoniaux, n'hésitez pas à contacter l'Office de Tourisme de Montpellier.
+        </p>
+        <p style="margin-top: 15px; font-weight: bold; color: #0056b3;">
+            📍 Place de la Comédie, 34000 Montpellier<br>
+            📞 04 67 60 60 60<br>
+            ✉️ contact@montpellier-tourisme.fr
+        </p>
+        <div style="margin-top: 30px;">
+            <a href="index.html" style="display: inline-block; padding: 10px 20px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">← Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer id="contact">
+        <p>© 2025 - Découverte de Montpellier | <a href="contact.html">Plus d'infos</a></p>
+    </footer>
+
+    <script>
+        if (window.self !== window.top) {
+            document.querySelectorAll('.nav-portfolio').forEach(function(el) {
+                if (el.parentElement) el.parentElement.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+</html>

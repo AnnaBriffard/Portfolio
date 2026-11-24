@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte de Montpellier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <ul>
+            <li><a href="../../index.html#project" class="nav-portfolio" target="_top">← Portfolio</a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#carte">Carte</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête avec titre et image de fond -->
+    <header id="accueil">
+        <h1>Bienvenue à Montpellier</h1>
+    </header>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="presentation">
+        <h2>Découvrez Montpellier</h2>
+        <p>Montpellier, ville du sud de la France, est connue pour son patrimoine, son dynamisme étudiant et sa proximité avec la Méditerranée.</p>
+        
+        <div class="images">
+            <figure>
+                <img src="img/montpellier4.jpg" alt="Promenade du Peyrou, Montpellier">
+                <figcaption>Promenade du Peyrou</figcaption>
+            </figure>
+            <figure>
+                <img src="img/montpellier5.jpg" alt="Arc de Triomphe, Montpellier">
+                <figcaption>Arc de Triomphe</figcaption>
+            </figure>
+            <figure>
+                <img src="img/montpellier3.jpeg" alt="Plage proche de Montpellier">
+                <figcaption>Place de la Comédie</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Section Carte interactive Google Maps -->
+    <section id="carte" class="carte">
+        <h2>Où se trouve Montpellier ?</h2>
+        
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11545.92244193574!2d3.8703808480376043!3d43.610769351000216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a52934177771%3A0x6a10061e3305f242!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1701540000000!5m2!1sfr!2sfr" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Carte interactive de Montpellier">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer id="contact">
+        <p>© 2025 - Découverte de Montpellier | <a href="contact.html">Plus d'infos</a></p>
+    </footer>
+
+    <script>
+        if (window.self !== window.top) {
+            document.querySelectorAll('.nav-portfolio').forEach(function(el) {
+                if (el.parentElement) el.parentElement.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+</html>
